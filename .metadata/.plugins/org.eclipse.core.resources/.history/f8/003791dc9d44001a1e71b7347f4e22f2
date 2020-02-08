@@ -1,0 +1,19 @@
+
+import java.io.Serializable;
+
+public class Frame implements Serializable{
+    
+    double header;
+    String data;
+    int protocolID;
+    double acknowledgement;
+    Boolean tailer;
+
+    Frame(double h, String d, int p, Boolean t,int ac) {
+      this.header = h;
+      this.data = d;
+      this.protocolID = p;
+      this.tailer = t;
+      this.acknowledgement = ac; 
+    }
+}
